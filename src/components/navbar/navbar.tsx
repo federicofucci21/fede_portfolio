@@ -13,7 +13,7 @@ export default function Navbar() {
   const [imgCheck, setImgCheck] = useState(true);
   const lang = useSelector((state: RootState) => state.lang.lang);
   const theme = useSelector((state: RootState) => state.theme.theme);
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   const dispatch = useDispatch();
 
