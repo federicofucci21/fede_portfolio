@@ -1,14 +1,21 @@
 .skills {
     display: flex;
-    /* height: 80rem; */
     align-items: center;
     background-color: var(--pages-background-color);
     width: auto;
     margin-left: 18rem;
-    border-top: 1.5px dashed black;
     border-bottom: 1.5px dashed black;
-    /* margin-top: 1rem; */
-    /* margin-bottom: 3rem; */
+    position: relative;
+    animation: 2.4s anim-skills ease;
+  }
+
+  .skillsD {
+    display: flex;
+    align-items: center;
+    background-color: var(--pages-background-color-dark);
+    width: auto;
+    margin-left: 18rem;
+    border-bottom: 1.5px var(--text-color-dark);
     position: relative;
     animation: 2.4s anim-skills ease;
   }
@@ -53,14 +60,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-evenly; */
     
   }
   .imgCard {
+    border: 1px solid black;
     border-radius: 50%;
     height: 5rem;
     width: 5rem;
   }
+
+  .imgCardD {
+    border: 2px solid var(--text-color-dark);
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+  }
+
   .pCard {
     color: black;
+  }
+
+  .pCardD {
+    color: var(--text-color-dark);
   }
