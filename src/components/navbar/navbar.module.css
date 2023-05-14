@@ -119,6 +119,7 @@
   font-style: italic;
   padding: 3px;
   cursor: pointer;
+  color:black;
 }
 .textArrow:hover {
   color: rgb(44, 41, 41);
