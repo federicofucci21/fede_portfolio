@@ -15,7 +15,7 @@
     background-color: var(--pages-background-color-dark);
     width: auto;
     margin-left: 18rem;
-    border-bottom: 1.5px var(--text-color-dark);
+    border-bottom: 1.5px dashed var(--text-color-dark);
     position: relative;
     animation: 2.4s anim-skills ease;
   }

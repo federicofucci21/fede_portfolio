@@ -1,23 +1,35 @@
-.div {
+.proyects {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     flex-direction: column;
     height: 100%;
     align-items: center;
     justify-items: center;
-    background-color: rgb(194, 187, 187);
-    /* width: 50%; */
-    margin-top: 0x;
+    background-color: var(--pages-background-color);
     margin-left: 18rem;
-    border-top: 1.5px dashed black;
     border-bottom: 1.5px dashed black;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
     position: relative;
     width: auto;
     gap: 2rem;
     padding: 2rem;
 }
+
+.proyectsD {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--pages-background-color-dark);
+  margin-left: 18rem;
+  border-bottom: 1.5px dashed var(--text-color-dark);
+  position: relative;
+  width: auto;
+  gap: 2rem;
+  padding: 2rem;
+}
+
   .card{
     display: flex;
     align-items: center;
