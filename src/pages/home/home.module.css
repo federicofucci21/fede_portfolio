@@ -1,0 +1,116 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 18rem;
+  background-color: var(--pages-background-color);
+  border-bottom: 1.5px dashed black;
+  padding: 1rem;
+  animation: 2s anim-home ease;
+}
+
+.homeD {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 18rem;
+  background-color: var(--pages-background-color-dark);
+  border-bottom: 1.5px dashed var(--text-color-dark);
+  padding: 1rem;
+  animation: 2s anim-home ease;
+}
+
+@keyframes anim-home {
+  0% {
+    opacity: 0;
+    transform: translatex(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translatex(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translatex(0%);
+  }
+}
+
+.tittle > h1 {
+  font-size: 50px;
+  font-family: "Sigmar";
+  padding: 1px;
+  margin: 1px;
+}
+
+.tittleD > h1 {
+  font-size: 50px;
+  font-family: "Sigmar";
+  padding: 1px;
+  margin: 1px;
+  color: var(--text-color-dark);
+}
+
+.tittle > h3 {
+  font-family: "Acme";
+  font-size: 30px;
+  padding: 1px;
+  margin: 1px;
+  margin-bottom: 1rem;
+}
+
+.tittleD > h3 {
+  font-family: "Acme";
+  font-size: 30px;
+  padding: 1px;
+  margin: 1px;
+  margin-bottom: 1rem;
+  color: var(--text-color-dark);
+}
+
+.linkCv {
+  text-decoration: none;
+  background-color: black;
+  color: var(--navBar-img-background-color);
+  border-color: var(--navBar-img-background-color);
+  padding: 5px;
+  border-radius: 10px;
+}
+.linkCv:hover {
+  transition-duration: 400ms;
+  color: black;
+  border: 1px solid black;
+  background-color: var(--navBar-img-background-color);
+}
+
+.linkCvD {
+  text-decoration: none;
+  background-color: var(--pages-background-color-dark);
+  color: var(--text-color-dark);
+  border: 2px solid var(--text-color-dark);
+  padding: 5px;
+  border-radius: 10px;
+}
+.linkCvD:hover {
+  transition-duration: 400ms;
+  color: var(--text-color-dark);
+  border: 1px solid var(--text-color-dark);;
+  background-color: var(--navBar-img-background-color);
+}
+
+.parraf {
+  font-family: "Permanent Marker", cursive;
+  padding: 5px;
+  width: 80%;
+}
+
+.parrafD {
+  font-family: "Permanent Marker", cursive;
+  padding: 5px;
+  width: 80%;
+  color: var(--text-color-dark);
+}
