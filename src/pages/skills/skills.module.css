@@ -83,3 +83,60 @@
   .pCardD {
     color: var(--text-color-dark);
   }
+
+  @media (max-width: 540px) {
+    .skills {
+      max-width: 100%;
+      margin-left: 0rem;
+      position: relative;
+    }
+  
+    .skillsD {
+      max-width: 100vh;
+      margin-left: 0rem;
+      position: relative;
+    }
+  
+    
+    .section {
+      width: 20rem;
+    }
+    
+    
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 0.5fr);
+      /* grid-template-rows: repeat(3, 15rem); */
+      padding: 0rem;
+    
+    }
+    .divCard {
+      height: 8rem;
+      width: 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+    }
+    .imgCard {
+      border: 1px solid black;
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+    }
+  
+    .imgCardD {
+      border: 2px solid var(--text-color-dark);
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+    }
+  
+    .pCard {
+      color: black;
+    }
+  
+    .pCardD {
+      color: var(--text-color-dark);
+    }
+  }

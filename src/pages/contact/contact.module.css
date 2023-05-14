@@ -102,3 +102,82 @@
     width: 5rem;
     background-color: var(--text-color-dark);
   }
+
+  @media (max-width: 540px) {
+    .contact {
+      margin-left: 0rem;
+max-width: 100%;
+  }
+  
+  .contactD {
+    margin-left: 0rem;
+    max-width: 100%;
+  }
+  
+  .section {
+      width:20rem;
+    
+    }
+  
+    .contacts {
+      display: grid;
+      grid-template-columns: repeat(2, 0.5fr);
+      align-content: center;
+      justify-items: center;
+      padding: 0rem;
+      gap: 0rem;
+    }
+  
+    .contactsDiv{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 10rem;
+      width: fit-content;
+    }
+  
+    .contactsDivD{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 10rem;
+      width: 10rem;
+    }
+    
+  
+    .contactsDiv > a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* gap: 2rem; */
+      text-decoration: none;
+      color: black;
+    }
+  
+    .contactsDivD > a{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* gap: 2rem; */
+      text-decoration: none;
+      color: var(--text-color-dark);
+    }
+  
+    .contactsDiv > a > img{
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+    }
+  
+    .contactsDivD > a > img{
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      background-color: var(--text-color-dark);
+    }
+  
+  }
