@@ -119,7 +119,7 @@
   .contacts {
     grid-template-columns: repeat(2, 1fr);
     padding: 0rem;
-    gap: 1rem;
+    gap: 5rem;
   }
 
   .contactsDiv {
