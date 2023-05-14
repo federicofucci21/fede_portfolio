@@ -88,28 +88,28 @@ export default function Navbar() {
       <div className={theme === "light" ? style.linksSection : style.linksSectionD}>
         <a
           href="/#up"
-          // onClick={() => toggle()}
+          onClick={() => toggleMenu(menu)}
           className={theme === "light" ? style.links : style.linksD}
         >
           Home
         </a>
         <a
           href="/#contact"
-          // onClick={() => toggle()}
+          onClick={() => toggleMenu(menu)}
           className={theme === "light" ? style.links : style.linksD}
         >
           {lang === "english" ? "Contact" : "Contacto"}
         </a>
         <a
           href="/#techstack"
-          // onClick={() => toggle()}
+          onClick={() => toggleMenu(menu)}
           className={theme === "light" ? style.links : style.linksD}
         >
           {lang === "english" ? "Tech Stack" : "Tech Stack"}
         </a>
         <a
           href="/#projects"
-          // onClick={() => toggle()}
+          onClick={() => toggleMenu(menu)}
           className={theme === "light" ? style.links : style.linksD}
         >
           {lang === "english" ? "Proyects" : "Proyectos"}
