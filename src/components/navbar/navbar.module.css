@@ -151,14 +151,21 @@
   justify-content: space-around;
 }
 
+.linksSectionD {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .links {
   display: flex;
   text-decoration: none;
-  /* text-align: center; */
   align-items: center;
   justify-content: center;
-  /* margin: 1rem;
-    padding: 0.5rem; */
   font-family: "Permanent Marker", cursive;
   font-weight: 550;
   color: black;
@@ -178,11 +185,8 @@
 .linksD {
   display: flex;
   text-decoration: none;
-  /* text-align: center; */
   align-items: center;
   justify-content: center;
-  /* margin: 1rem;
-    padding: 0.5rem; */
   font-family: "Permanent Marker", cursive;
   font-weight: 550;
   color: var(--text-color-dark);
@@ -190,8 +194,6 @@
   border-radius: 10px;
   height: 2rem;
   width: 8rem;
-  /* box-shadow: 3px 3px black; */
-  /* background-color: #ffb703; */
   background-color: var(--navBar-background-color-dark);
 }
 
@@ -256,13 +258,13 @@
 
 @media (max-width: 540px) {
   .switch {
-    margin-top: 0.5em;
-    margin-left: 0.5em;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 
   .switchD {
-    margin-top: 0.5em;
-    margin-left: 0.5em;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -304,11 +306,198 @@
 
 @media (max-width: 540px) {
   .switchLang {
-    margin-top: 2.7em;
-    margin-left: 0.5em;
+    margin-bottom: 0px;
+    margin-left:0px;
+    margin-top: 0px;
+    top: 2.5em;
   }
   .switchLangD {
-    margin-top: 2.7em;
-    margin-left: 0.5em;
+    margin-top: 0px;
+    margin-left: 0px;
+    top: 2.5em;
   }
 }
+
+/*btn Hamburguesa*/
+.nav__label,
+.nav__input {
+  display: none;
+}
+
+.nav__menu {
+  width: 40%;
+  display: flex;
+  gap: 6.5rem;
+  padding-left: 6.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn_hmb {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 5rem;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+}
+.btn_hmbD {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 5rem;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  color: rgb(146, 89, 89);
+}
+
+.linea1,
+.linea2,
+.linea3 {
+  height: 10px;
+  background-color: rgb(26, 26, 26);
+  border-radius: 5px;
+  margin: 3px 0px;
+  transition: all 400ms ease;
+}
+.linea1 {
+  width: 50px;
+}
+.linea2 {
+  width: 40px;
+}
+.linea3 {
+  width: 30px;
+}
+
+.linea1D,
+.linea2D,
+.linea3D {
+  height: 10px;
+  background-color: rgb(146, 89, 89);
+  border-radius: 5px;
+  margin: 3px 0px;
+  transition: all 400ms ease;
+}
+.linea1D {
+  width: 50px;
+}
+.linea2D {
+  width: 40px;
+}
+.linea3D {
+  width: 30px;
+}
+
+@media (max-width: 540px) {
+  .navbar,
+  .navbarD {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    height: 5rem;
+    border-radius: 0%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 3rem;
+    height: 5rem;
+    top: 0.5px;
+    /* left: 0.5em; */
+  }
+
+  .img, .imgStop, .imgStopD {
+    height: 4rem;
+    /* position: none; */
+    top: 1rem;
+    left: 2em;
+  }
+
+  .arrowDiv {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    width: 7rem;
+    position: absolute;
+    right: 10px;
+    top: 15.5rem;
+  }
+  
+  .imgArrow {
+    position: fixed;
+    left: 15.3rem;
+    top: 2.3rem;
+  }
+  
+  .textArrow {
+    position: fixed;
+    left: 17.5rem;
+    top: 2.3rem;
+    font-size: small;
+  }
+
+
+  .textArrowD {
+    position: fixed;
+    left: 17.5rem;
+    top: 2.3rem;
+    font-size: small;
+  }
+  
+
+  .btn_hmb,
+  .btn_hmbD {
+    position: fixed;
+    top: 2px;
+    right: 14px;
+  }
+
+  .nav__label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .linksSection {
+    flex-direction: column;
+    height: 30em;
+    width: 100%;
+    gap: 3rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 5rem;
+    background-color: var(--navBar-background-color-light);
+    clip-path: circle(0 at center);
+    transition: clip-path 0.4s ease-in-out;
+  }
+  .linksSectionD {
+    flex-direction: column;
+    height: 30em;
+    width: 100%;
+    gap: 3rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 5rem;
+    background-color: var(--navBar-background-color-dark);
+    clip-path: circle(0 at center);
+    transition: clip-path 0.4s ease-in-out;
+  }
+
+  .nav__input:checked + .linksSection {
+    clip-path: circle(100% at center);
+  }
+  .nav__input:checked + .linksSectionD {
+    clip-path: circle(100% at center);
+  }
+}
+

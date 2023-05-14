@@ -13,6 +13,7 @@ export default function Navbar() {
   const [imgCheck, setImgCheck] = useState(true);
   const lang = useSelector((state: RootState) => state.lang.lang);
   const theme = useSelector((state: RootState) => state.theme.theme);
+  const [menu, setMenu] = useState(true);
 
   const dispatch = useDispatch();
 
@@ -23,6 +24,14 @@ export default function Navbar() {
     }
     return setImgCheck(true);
   };
+
+    // eslint-disable-next-line no-constant-condition
+    const toggleMenu = (menu: boolean) => {
+      if (menu) {
+        return setMenu(false);
+      }
+      return setMenu(true);
+    };
 
   return (
     <div className={theme === "light" ? style.navbar : style.navbarD}>
@@ -36,7 +45,6 @@ export default function Navbar() {
 
         <img
           className={imgCheck === false ? style.img : style.imgStop}
-          // className={style.img}
           alt="FOTO"
           src={memoji1}
         />
@@ -47,9 +55,9 @@ export default function Navbar() {
           </h5>
         </div>
       </div>
-      {/*<label
+      <label
         htmlFor="menu"
-        onClick={() => toggle()}
+        onClick={() => toggleMenu(menu)}
         className={style.nav__label}
       >
         <div
@@ -73,11 +81,11 @@ export default function Navbar() {
       <input
         type="checkbox"
         id="menu"
-        checked={openMenu}
+        checked={menu}
         className={style.nav__input}
-      /> */}
+      />
 
-      <div className={style.linksSection}>
+      <div className={theme === "light" ? style.linksSection : style.linksSectionD}>
         <a
           href="/#up"
           // onClick={() => toggle()}
