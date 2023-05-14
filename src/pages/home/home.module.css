@@ -8,6 +8,7 @@
   border-bottom: 1.5px dashed black;
   padding: 1rem;
   animation: 2s anim-home ease;
+  color: black;
 }
 
 .homeD {
