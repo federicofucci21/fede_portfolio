@@ -120,7 +120,7 @@
     margin-left: 0rem;
     margin-top: 5rem;
     padding: 0rem;
-    max-width: fit-content;
+    max-width: 100%;
     height: 35rem;
   }
   
@@ -128,7 +128,7 @@
     margin-left: 0rem;
     margin-top: 5rem;
     padding: 0rem;
-    max-width: fit-content;
+    max-width: 100%;
     height: 35rem;
   }
 

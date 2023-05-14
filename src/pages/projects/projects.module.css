@@ -45,32 +45,15 @@
     flex-direction: column;
     margin-left: 0rem;
     position: relative;
-    width: 100vh;
+    max-width:100%;
 
   }
   
   .proyectsD {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 0.5fr);
     flex-direction: column;
-    height: 100%;
-    align-items: center;
-    justify-items: center;
-    background-color: var(--pages-background-color-dark);
-    margin-left: 18rem;
-    border-bottom: 1.5px dashed var(--text-color-dark);
+    margin-left: 0rem;
     position: relative;
-    width: auto;
-    gap: 2rem;
-    padding: 2rem;
-  }
-  
-  .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20rem;
-    height: 100%;
-    animation: 7s anim-card ease;
+    max-width:100%;
   }
 }

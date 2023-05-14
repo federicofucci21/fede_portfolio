@@ -14,7 +14,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -53,3 +53,16 @@ html{
 .read-the-docs {
   color: #888;
 } */
+
+@media (max-width: 540px) {
+  #root {
+    max-width: 100%;
+  }
+  html {
+    max-width: 100%;
+  }
+
+  body {
+    max-width: 100%;
+  }
+}

@@ -432,14 +432,14 @@
   
   .imgArrow {
     position: fixed;
-    left: 15.3rem;
+    left: 18rem;
     top: 2.3rem;
   }
   
   .textArrow {
     position: fixed;
-    left: 17.5rem;
-    top: 2.3rem;
+    left: 20rem;
+    top: 2.2rem;
     font-size: small;
   }
 

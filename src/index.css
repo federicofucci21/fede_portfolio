@@ -92,3 +92,17 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+
+@media (max-width: 540px) {
+  #root {
+    max-width: 100%;
+  }
+  html {
+    max-width: 100%;
+  }
+
+  body {
+    max-width: 100%;
+  }
+}
