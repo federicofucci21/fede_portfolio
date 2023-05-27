@@ -3,8 +3,21 @@ import caneapp from "../../img/projects/caneapp.png";
 import bacofusion from "../../img/projects/BacoFusion.png";
 import alkemy from "../../img/projects/alkemy.png";
 import workinprogess from "../../img/projects/workinprogess.jpg";
+import affranchinoKinesio from "../../img/projects/affranchinoKinesio.png"
 
 export const dataProjects = [
+  {
+    tittle: "Affranchino.Kinesio",
+    dev: "Front-End",
+    img: affranchinoKinesio,
+    demo: "https://affranchino-kinesio.vercel.app/",
+    github: "https://github.com/federicofucci21/affranchino.kinesio",
+    description: {
+      english:  "Personal page for a kinesiology service. Includes Landing page, service page with detailed cards, 'about me' page with scroll and tabs, a contac page with whatsapp and and linked e-mail, instagram and facebook. App adapted to different screem sizes with css responsive.",
+      spanish: "Pagina personal desarrollada para un servicio de kinesiologia. Incluye pagina de bienvenida, pagina de servicios con cartas detalladas, pagina 'sobre mi' con scroll y pestañas, pagina de contacto con links a whatsapp, instagram, facebook y e-mail. Aplicacion completamente adaptada a diferentes tamaños de pantallas usando css responsivo",
+    },
+    tecnologies: "ViteJs / Redux / Ant Desing / TypeScript / JavaScript / SCRUM",
+  },
   {
     tittle: "Cane - Admin Dashboard",
     dev: "Full-Stack",
