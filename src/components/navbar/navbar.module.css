@@ -395,6 +395,7 @@
 @media (max-width: 540px) {
   .navbar,
   .navbarD {
+    font-family: "Roboto", sans-serif;
     flex-direction: row;
     width: 100%;
     max-width: 100%;
@@ -412,6 +413,10 @@
     height: 5rem;
     top: 0.5px;
     /* left: 0.5em; */
+  }
+
+  .links, .linksD {
+    font-family: "Roboto", sans-serif;
   }
 
   .img, .imgStop, .imgStopD {
@@ -472,7 +477,8 @@
     gap: 3rem;
     position: fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5em;
     align-items: center;
     top: 5rem;
     background-color: var(--navBar-background-color-light);
